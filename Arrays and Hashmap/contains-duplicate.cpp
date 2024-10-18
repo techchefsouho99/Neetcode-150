@@ -1,3 +1,6 @@
+/*
+* Contains Duplicate: https://leetcode.com/problems/contains-duplicate/description/
+*/
 #include <iostream>
 #include <unordered_set>
 #include <vector>
