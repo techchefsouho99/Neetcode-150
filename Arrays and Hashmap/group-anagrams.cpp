@@ -49,8 +49,9 @@ public:
     //     return res;
     // }
 
+    // using hashmap and iteration
     vector<vector<string> > groupAnagrams(vector<string>& strs) {
-        /********************************** Time complexity of O(m*n*logn)  *********************************/
+        /********************************** Time complexity of O(m*n*26)  *********************************/
         vector<vector<string> > res;
         unordered_map<string,vector<string> > umap;
         for(string str:strs){
@@ -69,22 +70,21 @@ public:
         return res;
     }
 
-    // Using sorting
-    // vector<vector<string>> groupAnagrams(vector<string>& strs) {
-    //     unordered_map<string, vector<string>> mp;
+        // Using sorting
+        /********************************** Time complexity of O(m*n*logn)  *********************************/
+        // unordered_map<string, vector<string>> mp;
         
-    //     for(auto x: strs){
-    //         string word = x;
-    //         sort(word.begin(), word.end());
-    //         mp[word].push_back(x);
-    //     }
+        // for(auto x: strs){
+        //     string word = x;
+        //     sort(word.begin(), word.end());
+        //     mp[word].push_back(x);
+        // }
         
-    //     vector<vector<string>> ans;
-    //     for(auto x: mp){
-    //         ans.push_back(x.second);
-    //     }
-    //     return ans;
-    // }
+        // vector<vector<string>> ans;
+        // for(auto x: mp){
+        //     ans.push_back(x.second);
+        // }
+        // return ans;
 };
 
 int main(){
