@@ -34,7 +34,7 @@ public:
         // Using bucket sort   Time complexity of O(n) + O(n) = O(n)
         vector<int> res;
         unordered_map<int,int> umap;
-        unordered_map<int,vector<int>> bucket_srt;
+        unordered_map<int,vector<int> > bucket_srt;
         int max=0;
         for(int num:nums){
             umap[num]+=1;
@@ -51,7 +51,21 @@ public:
             }
         }
         return res;
-
-
     }
 };
+
+int main(){
+    vector<int> nums;
+    nums.push_back(1);
+    nums.push_back(1);
+    nums.push_back(2);
+    nums.push_back(3);
+    nums.push_back(1);
+    nums.push_back(2);
+    int k =2;
+    Solution s;
+    cout<<"[";
+    for(int num:s.topKFrequent(nums,k))
+        cout<<num<<",";
+    cout<<"]";
+}
