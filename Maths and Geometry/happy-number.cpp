@@ -14,6 +14,7 @@ public:
         while (n != 1 && uset.find(n) == uset.end()) {
             uset.insert(n);
             n = newNum(n);
+            
         }
         
         return n == 1;
