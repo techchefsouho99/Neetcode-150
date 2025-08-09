@@ -1,3 +1,7 @@
+'''
+* Climbing Stairs: https://leetcode.com/problems/climbing-stairs/description/
+'''
+
 class Solution(object):
     def climbStairs(self, n):
         """
@@ -15,13 +19,13 @@ class Solution(object):
         # return dfs(0) 
 
         one , two = 1 , 1
-        for i in range(n-1):
+        for _ in range(n-1):
             one, two = one + two, one
         return one
 
 # Example usage:
 if __name__ == "__main__":
-    solution = Solution()
+    sol = Solution()
 
     sol = Solution()
     print(sol.climbStairs(5))  # Output: 8    
