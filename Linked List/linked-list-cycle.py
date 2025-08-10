@@ -1,5 +1,5 @@
 '''
-* Linked List Cycle: https://leetcode.com/problems/linked-list-cycle/
+* Linked List Cycle: https://leetcode.com/problems/linked-list-cycle/description
 '''
 
 # Definition for singly-linked list.
